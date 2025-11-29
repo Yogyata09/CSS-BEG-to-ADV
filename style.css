@@ -1,48 +1,28 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f0f0f0;
 }
-.block-menu a {
-    display: block;
-    background-color: #3498db;
-    color: white;
+
+.container {
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column-reverse;
+    background-color: #fff;
     padding: 10px;
-    margin: 5px 0;
-    text-decoration: none;
-}
- .inline-menu a {
-    display: inline;
-    background-color: #24f544;
-    color: white;
-    padding: 5px;
-    margin: 5px;
-    text-decoration: none;
- }
-
- .inline-block-menu a {
-    display: inline-block;
-    background-color: #9b599b;
-    color: white;
-    height: 50ps;
-    width: 120px;
-    padding: 10px 15px;
-
- }
-
- .float-menu a {
-    display: float;
-    float: right;
-    background-color: aqua;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    text-decoration: none;
- }
-
- .clear-example {
-    clear: both;  /*this stops floating element */
-    background-color: palevioletred;
-    padding: 10px;
-    margin-top: 20px;
     border: 1px solid #ccc;
- }
+}
+
+.box {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;   
+}
+
+.box1 {background-color: lightcoral;}
+.box2 {background-color: lightsalmon;}
+.box3 {background-color: lightseagreen;}
+.box4 {background-color: lightsalmon;}
+.box5 {background-color: lightcoral;}
+
