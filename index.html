@@ -3,54 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Menu Example</title>
+    <title>Responsive Product Grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 align="center">Navigation Menu Demo</h1>
-
-    <!-- Block Example-->
-     <h2>Block Example</h2>
-     <div class="block-menu">
-        <a href="#">Home</a>
-        <a href="#">Product</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-     </div>
-
-     <!--Inline Example-->
-     <h2>Inline Example</h2>
-     <div class="inline-menu">
-     <a href="#">Home</a>
-     <a href="#">Product</a>
-     <a href="#">About</a>
-     <a href="#">Contact</a>
-     </div>
-
-     <!--Inline-Block Example-->
-     <h2>Inline-Block-menu</h2>
-     <div class="inline-block-menu">
-     <a href="#">Home</a>
-     <a href="#">Product</a>
-     <a href="#">About</a>
-     <a href="#">Contact</a>
-     </div>
-
-     <!-- Float Example -->
-      <h2>Float Example</h2>
-      <div class="inline-block-menu">
-     <a href="#">Home</a>
-     <a href="#">Product</a>
-     <a href="#">About</a>
-     <a href="#">Contact</a>
-     </div>
-
-      <!--Clear Example-->
-     <h2>Clear Example</h2>
-     <div class="clear-example">
-     <p>This text come <b>after</b> clearing floats.
-        It will appear below the orange menu above.</p>
-     </div>
-
+    <h1 class="title">Best Selling Items</h1>
+    <div class="grid-container">
+        <div class="product-card">
+            <img src="laptop.jpg" alt="">
+            <h2>HP 255 G10 Laptop (16 GB RAM, 512GB SSD, Ryzen 3)</h2>
+            <p>A fast and reliable laptop ideal for daily work, browsing and multitasking.</p>
+            <span class="price">₹999</span>
+            <p><button> BUY NOW</button></p> 
+        </div>
+        <div class="product-card">
+            <img src="phone.jpg" alt="">
+            <h2>Apple iphone 15(128 GB) - green</h2>
+            <p>experience smooth performance, stunning photos, and an advanced A 16 chip</p>
+            <span class="price">₹1499</span>
+            <p><button> BUY NOW</button></p> 
+        </div>
+        <div class="product-card">
+            <img src="microwave.jpg" alt="">
+            <h2>LG 28 L convection microwave oven</h2>
+            <p>perfect for baking, grilling and quick heating with a large 28L capacity</p>
+            <span class="price">₹799</span>
+            
+            <p><button> BUY NOW</button></p> 
+        </div>
+        <div class="product-card">
+            <img src="buds.jpg" alt="">
+            <h2>boAt nirvana Zenith pro (2025)</h2>
+            <p>premium wireless earbuds with cvlear sound and long lasting battery life.</p>
+            <span class="price">₹1299</span>
+           <p><button> BUY NOW</button></p> 
+        </div>
+    </div>
 </body>
 </html>
