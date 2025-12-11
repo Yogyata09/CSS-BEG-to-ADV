@@ -2,55 +2,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 body {
-    padding: 20px;
-    background: #f4f4f4;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fafafa;
 }
-.title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 26px;
+.navbar {
+    background: #111;
+    color: white;
+    padding: 1rem 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
-.grid-container {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+.logo {
+    font-size: 1.7rem;
+    font-weight: 700;
 }
-@media (max-width: 1024px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+.nav-center {
+    display: flex;
+    gap: 2rem;
+}
+.nav-center a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 1.05rem;
+    transition: 0.3s;
+}
+.nav-center a:hover {
+    color: #fff;
+}
+.nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#menu-toggle {
+    display: none;
+}
+@media(max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
     }
-}
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr;
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
     }
-}
-.product-card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.product-card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 10px;
-}
-.product-card h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-.product-card p {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: #444;
-}
-.price {
-    font-weight: bold;
-    font-size: 16px;
-    color: green;
+    .nav-center {
+        display: none;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 9;
+        border-top: 1px solid #444;
+    }
+    #menu-toggle:checked ~ .nav-center {
+        display: flex;
+        gap: 1.2rem;
+    }
+    .nav-right {
+        display: flex;
+        margin-left: auto;
+    }
 }
