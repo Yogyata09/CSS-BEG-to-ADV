@@ -1,34 +1,141 @@
-body { font-family: sans-serif; margin: 0; background: #e3f2fd; }
-
-header {
-  background: #1565c0;
-  color: white;
-  padding: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav a { color: white; margin: 10px; }
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #0d47a1;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
 
 .hero {
-  background: linear-gradient(#42a5f5, #90caf9);
-  padding: 60px;
+  background: linear-gradient(to right, #2196f3, #21cbf3);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 30px;
+  border: none;
+  background: white;
+  color: #2196f3;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.about {
+  padding: 60px 20px;
   text-align: center;
 }
 
-.features {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
-.box {
+.services {
+  background: #e3f2fd;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
   background: white;
+  width: 250px;
+  margin: 15px;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.cta {
+  background: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact button {
+  background: #0d47a1;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
 }
 
 footer {
-  background: #1565c0;
+  background: #0d47a1;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
 }
