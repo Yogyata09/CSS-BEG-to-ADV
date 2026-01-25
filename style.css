@@ -1,82 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background-color: #f7f7f7;
+  font-family: sans-serif;
+  text-align: center;
+  background: whitesmoke;
 }
 
-/* Header */
 header {
-    background-color: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background: rgb(153, 122, 255);
+  color: white;
+  padding: 30px;
 }
 
-header h1 {
-    font-size: 36px;
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px;
 }
 
-header p {
-    font-size: 16px;
-    margin-top: 5px;
-}
-
-/* Menu Section */
-.menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
-}
-
-/* Card */
 .card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s;
+  background: #b2ffe7;
+  padding: 20px;
+  width: 150px;
+  border-radius: 10px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.card h3 {
-    margin: 10px 0;
-    color: #2e7d32;
-}
-
-.card p {
-    font-size: 14px;
-    color: #555;
-    padding: 0 10px;
-}
-
-.card span {
-    display: block;
-    margin: 10px 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #e65100;
-}
-
-/* Footer */
-footer {
-    background-color: #2e7d32;
-    color: white;
-    text-align: center;
-    padding: 10px;
+button {
+  background: rgb(164, 135, 250);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
 }
